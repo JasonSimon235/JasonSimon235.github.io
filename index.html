@@ -1,15 +1,173 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Jason Simon Ganta</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jason Simon Ganta | Machine Learning Engineer</title>
+  <meta name="description" content="Jason Simon Ganta — Aspiring Machine Learning Engineer specializing in AI & Data Science.">
+  <style>
+    :root {
+      --bg: #0d1117;
+      --card: #161b22;
+      --border: #30363d;
+      --text: #e6edf3;
+      --muted: #8b949e;
+      --accent: #58a6ff;
+      --accent2: #3fb950;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      line-height: 1.6;
+    }
+    .container { max-width: 860px; margin: 0 auto; padding: 0 20px; }
+
+    /* Hero */
+    .hero { padding: 90px 0 50px; text-align: center; border-bottom: 1px solid var(--border); }
+    .hero h1 { font-size: 2.6rem; letter-spacing: -0.5px; }
+    .hero .tagline { color: var(--accent); font-size: 1.2rem; margin: 10px 0 18px; font-weight: 600; }
+    .hero p { color: var(--muted); max-width: 620px; margin: 0 auto 28px; }
+    .btn {
+      display: inline-block; padding: 10px 22px; margin: 4px;
+      border: 1px solid var(--border); border-radius: 8px;
+      color: var(--text); text-decoration: none; font-weight: 600; font-size: 0.95rem;
+      background: var(--card); transition: 0.2s;
+    }
+    .btn:hover { border-color: var(--accent); color: var(--accent); }
+
+    /* Sections */
+    section { padding: 55px 0; border-bottom: 1px solid var(--border); }
+    h2 { font-size: 1.6rem; margin-bottom: 24px; color: var(--accent); }
+    .about p { color: var(--muted); margin-bottom: 14px; }
+
+    /* Skills */
+    .skills-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; }
+    .skill-card { background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 18px; }
+    .skill-card h3 { font-size: 1rem; color: var(--accent2); margin-bottom: 8px; }
+    .skill-card p { color: var(--muted); font-size: 0.92rem; }
+
+    /* Projects */
+    .project {
+      background: var(--card); border: 1px solid var(--border);
+      border-radius: 12px; padding: 24px; margin-bottom: 22px;
+    }
+    .project h3 { font-size: 1.25rem; margin-bottom: 10px; }
+    .project p { color: var(--muted); margin-bottom: 10px; }
+    .project ul { color: var(--muted); margin: 0 0 14px 20px; }
+    .project .stack { font-size: 0.85rem; color: var(--accent); font-weight: 600; }
+    .project a { color: var(--accent); text-decoration: none; font-weight: 600; }
+    .project a:hover { text-decoration: underline; }
+
+    /* Education */
+    .edu-item { margin-bottom: 22px; }
+    .edu-item h3 { font-size: 1.1rem; }
+    .edu-item .meta { color: var(--muted); font-size: 0.92rem; }
+
+    /* Contact */
+    .contact { text-align: center; }
+    .contact p { color: var(--muted); margin-bottom: 20px; }
+
+    footer { text-align: center; padding: 30px 0; color: var(--muted); font-size: 0.85rem; }
+    @media (max-width: 600px) { .hero h1 { font-size: 2rem; } }
+  </style>
 </head>
-<body style="font-family: sans-serif; max-width: 800px; margin: 40px auto;">
-  <h1>Jason Simon Ganta</h1>
-  <p>Machine Learning Engineer | AI & Data Science</p>
-  <p>MSc Advanced Computer Science, University of Hertfordshire</p>
-  <p><a href="https://github.com/JasonSimon235">GitHub</a> · <a href="mailto:your-email@example.com">Email</a></p>
-  <h2>Projects</h2>
-  <p><strong>AI-Powered Image Description System</strong> — CNN encoder + NLP decoder generating image captions. <a href="#">View on GitHub</a></p>
+<body>
+
+  <!-- HERO -->
+  <header class="hero">
+    <div class="container">
+      <h1>Jason Simon Ganta</h1>
+      <p class="tagline">Aspiring Machine Learning Engineer | AI &amp; Data Science</p>
+      <p>I build deep learning systems that turn data into understanding — from image captioning models to NLP pipelines. Currently pursuing my MSc in Advanced Computer Science at the University of Hertfordshire.</p>
+      <a class="btn" href="https://github.com/JasonSimon235">GitHub</a>
+      <a class="btn" href="https://www.linkedin.com/in/jason-simon-82404695">LinkedIn</a>
+      <a class="btn" href="Jason_Simon_Ganta_Resume.pdf">📄 Download CV</a>
+    </div>
+  </header>
+
+  <!-- ABOUT -->
+  <section class="about">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>I'm an aspiring Machine Learning Engineer with a passion for computer vision and natural language processing. I hold a B.Tech in Computer Science and Engineering from Vellore Institute of Technology (2023), and I'm completing my MSc in Advanced Computer Science at the University of Hertfordshire (expected September 2026).</p>
+      <p>I enjoy working at the intersection of vision and language — building models that can <em>see</em> and <em>describe</em>. My flagship project is an AI-powered image description system combining CNN encoders with NLP decoders, deployed as a working Flask application.</p>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section>
+    <div class="container">
+      <h2>Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-card"><h3>Programming</h3><p>Python, SQL</p></div>
+        <div class="skill-card"><h3>Machine Learning</h3><p>TensorFlow, Keras, CNNs, NLP, Model Evaluation (BLEU)</p></div>
+        <div class="skill-card"><h3>Data Analysis</h3><p>Pandas, NumPy</p></div>
+        <div class="skill-card"><h3>Deployment &amp; Tools</h3><p>Flask, Git, GitHub</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section>
+    <div class="container">
+      <h2>Projects</h2>
+
+      <div class="project">
+        <h3>⭐ AI-Powered Image Description System</h3>
+        <p>A deep learning system that generates natural-language descriptions of images, designed to improve accessibility for visually impaired users.</p>
+        <ul>
+          <li><strong>Encoder–Decoder architecture:</strong> CNN feature extractor paired with an NLP decoder to produce captions</li>
+          <li><strong>Deployed</strong> as a Flask web application for real-time caption generation</li>
+          <li><strong>Evaluated</strong> using BLEU scores to measure caption quality</li>
+        </ul>
+        <p class="stack">Python · TensorFlow · Keras · CNN · NLP · Flask</p>
+        <a href="https://github.com/JasonSimon235/project">View on GitHub →</a>
+      </div>
+
+      <!-- Add more project cards here as you build them:
+      <div class="project">
+        <h3>Project 2 Name</h3>
+        <p>Description...</p>
+        <p class="stack">Stack...</p>
+        <a href="#">View on GitHub →</a>
+      </div>
+      -->
+
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section>
+    <div class="container">
+      <h2>Education</h2>
+      <div class="edu-item">
+        <h3>MSc, Advanced Computer Science</h3>
+        <p class="meta">University of Hertfordshire, UK · Expected Sep 2026</p>
+      </div>
+      <div class="edu-item">
+        <h3>B.Tech, Computer Science and Engineering</h3>
+        <p class="meta">Vellore Institute of Technology · Graduated Apr 2023</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact">
+    <div class="container">
+      <h2>Contact</h2>
+      <p>Let's connect! I'm open to ML internships, graduate roles, and collaborations.</p>
+      <a class="btn" href="mailto:jasonsimon2024@gmail.com">📧 Email</a>
+      <a class="btn" href="https://www.linkedin.com/in/jason-simon-82404695">💼 LinkedIn</a>
+      <a class="btn" href="https://github.com/JasonSimon235">🐙 GitHub</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 Jason Simon Ganta · Built with plain HTML &amp; CSS</p>
+  </footer>
+
 </body>
 </html>
 
